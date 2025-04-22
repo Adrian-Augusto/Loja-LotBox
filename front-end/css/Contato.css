@@ -1,0 +1,132 @@
+:root {
+    --primary-color: #6c5ce7;
+    --accent-color: #fd79a8;
+    --text-color: #636e72;
+    --light-color: #f5f6fa;
+    --dark-color: #2d3436;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #dfe6e9, #f8f8f8);
+  }
+  
+  /* ===== HEADER ===== */
+  .header {
+    position: fixed;
+    top: 0;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1.2rem 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    z-index: 100;
+    backdrop-filter: blur(10px);
+  }
+  
+  .header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .header nav a {
+    margin-left: 2rem;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .header nav a:hover {
+    color: var(--primary-color);
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem 5%;
+    }
+  
+    .header nav {
+      margin-top: 0.5rem;
+    }
+  
+    .header nav a {
+      display: inline-block;
+      margin: 0.5rem 1rem 0 0;
+    }
+  }
+  
+  /* ===== CONTATO ===== */
+  .contato-page {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contact-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .contact-box h2 {
+    margin-bottom: 0.5rem;
+    color: var(--dark-color);
+  }
+  
+  .contact-box p {
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+  }
+  
+  .contact-box form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-box input,
+  .contact-box textarea {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: 1px solid #dcdde1;
+    font-size: 1rem;
+    resize: none;
+  }
+  
+  .contact-box button {
+    padding: 0.8rem;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .contact-info {
+    margin-top: 2rem;
+    font-size: 0.95rem;
+    color: var(--text-color);
+    text-align: center;
+  }
+  
+  .contact-info p {
+    margin: 0.3rem 0;
+  }
+  

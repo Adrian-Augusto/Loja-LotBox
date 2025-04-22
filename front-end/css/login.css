@@ -1,0 +1,191 @@
+:root {
+    --primary-color: #6c5ce7;
+    --secondary-color: #a29bfe;
+    --accent-color: #fd79a8;
+    --dark-color: #2d3436;
+    --light-color: #f5f6fa;
+    --text-color: #636e72;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, rgb(151, 187, 221), #f8f8f8);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 120px; /* espaço para header fixo */
+  }
+  
+  /* ================= HEADER ================= */
+  
+  .login-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1.2rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    z-index: 100;
+    backdrop-filter: blur(10px);
+  }
+  
+  .login-header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .login-header nav a {
+    margin-left: 2rem;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .login-header nav a:hover {
+    color: var(--primary-color);
+  }
+  
+  @media (max-width: 768px) {
+    .login-header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem 5%;
+    }
+  
+    .login-header nav {
+      margin-top: 0.5rem;
+    }
+  
+    .login-header nav a {
+      display: inline-block;
+      margin: 0.5rem 1rem 0 0;
+    }
+  }
+  
+  /* ============ CONTEÚDO CENTRALIZADO ============ */
+  
+  .main-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+  }
+  
+  /* ================ LOGIN =================== */
+  
+  .login-container {
+    display: flex;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .login-image {
+    flex: 1 1 300px;
+    background: linear-gradient(135deg, #74b9ff, #f8f8f8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .login-image img {
+    width: 80%;
+    max-width: 300px;
+  }
+  
+  .login-form {
+    flex: 1 1 400px;
+    padding: 3rem 2rem;
+    background: #fff;
+  }
+  
+  .login-form h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--dark-color);
+  }
+  
+  .login-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-form label {
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+    font-weight: 500;
+  }
+  
+  .login-form input {
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: 1px solid #dcdde1;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+  }
+  
+  .login-form input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+  }
+  
+  .forgot {
+    text-align: right;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    text-decoration: none;
+  }
+  
+  button {
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    opacity: 0.95;
+  }
+  
+  .signup-link {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.95rem;
+  }
+  
+  .signup-link a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
