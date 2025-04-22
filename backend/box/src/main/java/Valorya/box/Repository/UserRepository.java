@@ -1,7 +1,7 @@
 package Valorya.box.Repository;
 
+import Valorya.box.Entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.security.core.userdetails.User;
 
 import java.util.Optional;
 
