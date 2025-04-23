@@ -10,4 +10,5 @@ public class BoxApplication {
 		SpringApplication.run(BoxApplication.class, args);
 	}
 
+
 }
